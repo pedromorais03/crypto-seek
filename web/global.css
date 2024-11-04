@@ -2,12 +2,15 @@
 
 :root{
    --black: #000;
-   --light-yellow: #FFD700;
-   --dark-yellow: #FFC300;
+   --secondary-black: #1C1C1C;
    --dark-grey: #333333;
+   --purple-taupe: #474350;
    --light-grey: #CCCCCC;
+   --primary-yellow: #FFC300;
+   --secondary-yellow: #FFD700;
+   --mustard-yellow: #FFC857;
    --lighter-yellow: #FFFACD;
-   --off-white: #DDD;
+   --off-white: #F4F7F5;
 }
 
 *{
@@ -26,7 +29,7 @@
 }
 
 .header .nav-header a{
-   color: var(--light-yellow);
+   color: var(--primary-yellow);
    text-decoration: none;
    transition: 0.5s all ease;
 }
