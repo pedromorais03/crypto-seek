@@ -1,67 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: url('banner.jpg') no-repeat center center;
-            background-size: cover;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .services, .charts {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .service, .chart {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 20px;
-            margin: 10px;
-            flex: 1 1 30%;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        /* Estilos responsivos */
-        @media (max-width: 768px) {
-            .service, .chart {
-                flex: 1 1 45%; /* 2 colunas em telas menores */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .service, .chart {
-                flex: 1 1 100%; /* 1 coluna em telas muito pequenas */
-            }
-            header {
-                height: 250px; /* altura reduzida para telas pequenas */
-            }
-        }
-    </style>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Inicial</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./global.css">
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav-header">
+                <a href="" class="nav-logo">Meu Logo</a>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-link"><a href="">Contato</a></li>
+                    <li class="nav-link"><a href="">Home</a></li>
+                    <li class="nav-link"><a href="">Sobre</a></li>
+                    <li class="nav-link"><a href="">Orçamento</a></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
 </html>
+<script src="./script.js"></script>
