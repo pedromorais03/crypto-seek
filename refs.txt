@@ -1,0 +1,19 @@
+https://codepen.io/avipk/pen/NzPNgv -> coin animation
+https://jsfiddle.net/z3roj35k/1/ -> coin animation 2
+
+
+total_energy_consumption
+BTC -> Total network energy consumption over 24 hours in kilowatt-hour (kWh).
+ETH -> Total network energy consumption over 24 hours in kilowatt-hour (kWh).
+
+total_network_carbon_footprint
+BTC -> Total network carbon footprint over 24 hours in kilograms of CO2 (kgCO2).
+ETH -> Total network carbon footprint over 24 hours in kilograms of CO2 (kgCO2).
+
+avg_energy_consumed_per_transaction 
+BTC -> Average energy consumed per transaction output in kilowatt-hour (kWh) => Output_kWh 
+ETH -> Average energy consumed per unit of gas in watt-hour (Wh) => Gas_unit_Wh 
+
+carbon_footprint_per_transaction 
+BTC -> Carbon footprint per transaction output in kilograms of CO2 (kgCO2) => Output_kgCO2 
+ETH -> Carbon footprint per unit of gas in grams of CO2 (gCO2) => Gas_unit_gCO2 
