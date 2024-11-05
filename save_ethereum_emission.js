@@ -1,6 +1,6 @@
 require('dotenv').config()
 const mysql = require('mysql2')
-const BASE_URL = 'https://digiconomist.net/wp-json/mo/v1/bitcoin/stats/'
+const BASE_URL = 'https://digiconomist.net/wp-json/mo/v1/ethereum/stats/'
 
 const start_date = new Date(2024, 6, 7)
 const end_date = new Date(2024, 7, 1)
@@ -48,10 +48,10 @@ function exec_loop(){
         console.log(url)
         let total_energy_consumption = data[0]["24hr_kWh"]
         let total_network_carbon_footprint = data[0]["24hr_kgCO2"]
-        let avg_energy_consumed_per_transaction = data[0]["Output_kWh"]
-        let carbon_footprint_per_transaction = data[0]["Output_kgCO2"]
+        let avg_energy_consumed_per_transaction = data[0]["Gas_unit_Wh"]
+        let carbon_footprint_per_transaction = data[0]["Gas_unit_gCO2"]
     
-        insertCrypto(total_energy_consumption, total_network_carbon_footprint, avg_energy_consumed_per_transaction, carbon_footprint_per_transaction, 'BTC', url)
+        insertCrypto(total_energy_consumption, total_network_carbon_footprint, avg_energy_consumed_per_transaction, carbon_footprint_per_transaction, 'ETH', url)
       }else{
         insertLog(url)
       }
