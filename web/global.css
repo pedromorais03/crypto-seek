@@ -6,11 +6,16 @@
    --dark-grey: #333333;
    --purple-taupe: #474350;
    --light-grey: #CCCCCC;
-   --primary-yellow: #FFC300;
-   --secondary-yellow: #FFD700;
-   --mustard-yellow: #FFC857;
-   --lighter-yellow: #FFFACD;
+   --primary-color: #FFC300;
+   --light-primary-color: #FFD700;
+   --lighter-primary-color: #FFC857;
+   --secondary-color: #FF8F00;
+   --light-secondary-color: #ECA753;
+   --off-white-yellow: #FFFACD;
    --off-white: #F4F7F5;
+
+   --error: #E61919;
+   --success: #176917;
 }
 
 *{
@@ -21,22 +26,32 @@
    cursor: url('./assets/icon/cursor.png'), pointer;
 }
 
+.header{
+   height: 10vh !important;
+}
+
 .header .nav-header{
    display: flex;
    justify-content: space-around;
    align-items: center;
    background: var(--black);
-   height: 8vh;
+   height: inherit;
 }
 
 .header .nav-header a{
-   color: var(--primary-yellow);
+   color: var(--primary-color);
    text-decoration: none;
    transition: 0.5s all ease;
 }
 
 .header .nav-header a:hover{
    opacity: 0.7;
+}
+
+.header .nav-header a img{
+   border-radius: 50%;
+   width: 48px;
+   /* mix-blend-mode: multiply; */
 }
 
 .header .nav-header .nav-list{
