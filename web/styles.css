@@ -8,6 +8,15 @@ html{
 
 .container .section{
   height: 100vh;
+  color: var(--off-white-yellow);
+}
+
+.container .section:nth-child(even){
+  background-color: var(--secondary-black);
+}
+
+.container .section:nth-child(odd){
+  background-color: var(--dark-grey);
 }
 
 .container .banner-section{
