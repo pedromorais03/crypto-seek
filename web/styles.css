@@ -19,3 +19,38 @@ html{
   background-position: 10%;
   background-attachment: fixed;
 }
+
+.go-to-top{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--secondary-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 0;
+  left: calc(50% - 24px);
+}
+
+.go-to-top:hover{
+  opacity: 1;
+  transition: .5s all ease;
+}
+
+.go-to-top a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: none;
+}
+
+.go-to-top a ion-icon{
+  color: var(--off-white);
+}
