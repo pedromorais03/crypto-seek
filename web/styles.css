@@ -12,7 +12,8 @@ html{
 
 .container .banner-section{
   height: 90vh;
-  background-image: url('./assets/images/banner.jpeg');
+  background-image: url('./assets/images/cyberpunk-bitcoin-illustration.jpg');
   background-size: cover;  
   background-repeat: no-repeat;
+  background-position: 10%;
 }
